@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Edu+NSW+ACT+Foundation&family=Press+Start+2P&display=swap');
+
+body {
+    font-family: 'Delicious Handrawn', cursive;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-family: 'Press Start 2P', cursive;
+    background-image: url(./assets/Neon.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	text-align: center;
+}
+
+#selecciona-tu-random {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo {
+    font-size: 60px;
+    font-family: 'Press Start 2P', cursive;
+    color: #ffffff;
+    text-shadow: 
+  .1vw 0vw .25vw #ffd8d8, .2vw 0vw .25vw #ffd8d8, .4vw 0vw .25vw #ffd8d8, 
+
+  .1vw 0vw   0vw #d84679, .2vw 0vw   0vw #d84679, .4vw 0vw   0vw #d84679,
+  .1vw 0vw  .1vw #d84679, .2vw 0vw  .1vw #d84679, .4vw 0vw  .1vw #d84679,
+  .1vw 0vw   2vw #d84679, .2vw 0vw   2vw #d84679, .4vw 0vw   2vw #d84679, 
+
+  .1vw 0vw   1vw #5a0519, .2vw 0vw   1vw #5a0519, .4vw 0vw   5vw #5a0519, 
+  .1vw 0vw   5vw #5a0519, .2vw 0vw  20vw #5a0519, .4vw 0vw  10vw #5a0519,
+  .1vw 0vw  10vw #5a0519, .2vw 0vw  30vw #5a0519, .4vw 0vw  10vw #5a0519;
+       
+}
+
+.subtitulo {
+    color: white;
+    font-size: 40px;
+
+}
+
+.tarjetas, .tarjetas-ataques {
+    display: flex;
+    gap: 1px;
+    text-align: justify;
+}
+
+.cosa {
+    position:absolute;
+    width: 5%;
+    height: 30%;
+    font-size: 20px;
+    font-family: 'Delicious Handrawn', cursive;
+}
+
+.tarjeta-de-histokemon {
+    width: 260px;
+    height: 220px;
+    background: black;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 5px;
+    border: 1px ridge #F5E965;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.tarjeta-de-histokemon img {
+    width: 160px;
+    height: 160px;
+    display: block;
+    margin: 0 auto;
+}
+
+#Boton-random {
+    width: 180px;
+    height: 40px;
+    border: none;
+    background: linear-gradient(to left, #00000000, #850000, #00000000);
+    color: white;
+    font-family: 'Delicious Handrawn', cursive;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    margin: 20px 2px 2px 2px;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    background-color: rgba(37, 43, 45, 0.8);
+    color: red;
+    /* pendiente el nombre se eleva por su clase. */
+}
+
+#seleccionar-ataque {
+    flex-direction: column;
+    align-items: center;
+}
+/*  */
+.boton-de-ataque {
+    background-color: #230919;
+    padding: 15px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 5px;
+}
+
+#mensajes {
+    width: 250px;
+    background: #850000;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 25px;
+}
+
+.duelo {
+    color: white;
+    grid-template-columns: 100px 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 60%;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.duelo img {
+    width: 160px;
+    height: 160px;
+    display: block;
+    margin-right: 5px;
+}
+
+#boton-reiniciar {
+    border: transparent;
+    color: #1e0f23;
+    font-family: 'Delicious Handrawn', cursive;
+    background: transparent;
+    font-size: 25px;
+}
+
+#vidas-jugador, #vidas-enemigo {
+    font-size: 32px;
+    margin: 5px;
+    color: red;
+}
+
+.ataques-jugador, .ataques-enemigo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: black;
+    border-radius: 20px;
+    margin-left: 40px;
+    border: 1px ridge #F5E965;
+    box-sizing: border-box;
+    padding: 40px;
+    
+}
+
+
+@media (max-device-width: 360px) {
+    .tarjetas, .tarjetas-ataques {
+    flex-direction: column;
+    }
+    /* todavia tengo que arreglar el despligue en telefonos */
+}
